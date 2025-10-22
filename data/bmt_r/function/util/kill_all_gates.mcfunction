@@ -1,0 +1,1 @@
+execute as @e[tag=gate,type=armor_stand] run function bmt_r:gate/gate_kill
