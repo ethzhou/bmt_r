@@ -12,5 +12,3 @@ data modify entity @s NoGravity set value true
 
 tp ~ ~1 ~
 execute at @s run function bmt_r:gate/construct/purple_gate_place
-
-kill @n[tag=orientator,type=armor_stand]

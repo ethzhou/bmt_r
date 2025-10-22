@@ -14,3 +14,5 @@ execute if entity @n[tag=orientator,type=armor_stand,y_rotation=-135..-45] unles
 execute if entity @n[tag=orientator,type=armor_stand,y_rotation=-45..45] unless entity @n[tag=orientator,type=armor_stand,y_rotation=45] run function bmt_r:gate/construct/purple_gate_place_north with entity @n[tag=orientator]
 # E
 execute if entity @n[tag=orientator,type=armor_stand,y_rotation=45..135] unless entity @n[tag=orientator,type=armor_stand,y_rotation=135] run function bmt_r:gate/construct/purple_gate_place_east with entity @n[tag=orientator]
+
+kill @n[tag=orientator,type=armor_stand]
