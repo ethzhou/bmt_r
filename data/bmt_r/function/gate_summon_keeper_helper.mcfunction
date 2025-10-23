@@ -2,7 +2,7 @@
 # { local_x:, local_y:, local_z:, place_value:, terminal_type:, }
 
 # VIA gate_summon_keeper_helper
-# AS gate keeper armor_stand
+# AS gate_keeper armor_stand
 # AT gate_heart armor_stand
 
 
