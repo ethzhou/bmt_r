@@ -1,6 +1,6 @@
 # Check the space around the spawn location
 
-# VIA purple_gate_place_[direction]
+# VIA purple_gate1_place_[direction]
 # AS gate_heart armor_stand
 # AT @s
 # ROTATED AS @s

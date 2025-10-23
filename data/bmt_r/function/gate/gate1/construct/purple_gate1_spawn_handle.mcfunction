@@ -8,7 +8,6 @@ kill @n[tag=gate_germ]
 
 $say gate at $(Pos)
 
-# TODO rename tag to gate_heart
 data modify entity @s Tags set value ["gate_heart","purple_gate"]
 data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
@@ -18,4 +17,4 @@ data modify entity @s NoGravity set value true
 tp ~ ~1 ~
 
 # Place the gate in the correct direction
-execute at @s run function bmt_r:gate/construct/purple_gate_place
+execute at @s run function bmt_r:gate/gate1/construct/purple_gate1_place
