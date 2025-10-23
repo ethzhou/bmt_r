@@ -2,7 +2,7 @@
 # { terminal_type:, index:, }
 
 # VIA gate[n]_summon_keepers
-# AS gate armor_stand
+# AS gate_heart armor_stand
 # AT @s
 
 

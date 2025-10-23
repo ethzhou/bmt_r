@@ -1,7 +1,7 @@
 # Replace kill switch
 
 # VIA gate_loop_replace_kill_switch
-# AS gate armor_stand
+# AS gate_heart armor_stand
 
 
 function bmt_r:util/store_pos {resource_location:"bmt_r:temp_gate_position"}

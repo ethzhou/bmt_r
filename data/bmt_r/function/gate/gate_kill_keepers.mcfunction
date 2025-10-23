@@ -1,8 +1,8 @@
 # Summon gate keepers at terminals
 
 # VIA gate_kill
-# AS gate armor_stand
-# AT gate armor_stand
+# AS gate_heart armor_stand
+# AT gate_heart armor_stand
 
 
 function bmt_r:gate_kill_keeper {terminal_type:input,index:0}

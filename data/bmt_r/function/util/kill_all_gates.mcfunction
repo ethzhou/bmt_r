@@ -1,1 +1,1 @@
-execute as @e[tag=gate,type=armor_stand] at @s run function bmt_r:gate/gate_kill
+execute as @e[tag=gate_heart,type=armor_stand] at @s run function bmt_r:gate/gate_kill

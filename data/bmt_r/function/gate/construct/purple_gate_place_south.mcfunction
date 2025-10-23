@@ -1,7 +1,7 @@
 # Create gate in the world facing south
 
 # VIA purple_gate_place
-# AS gate armor_stand
+# AS gate_heart armor_stand
 # AT @s
 
 

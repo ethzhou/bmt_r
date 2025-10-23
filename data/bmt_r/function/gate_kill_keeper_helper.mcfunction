@@ -2,8 +2,8 @@
 # { local_x:, local_y:, local_z:, place_value:, terminal_type:, }
 
 # VIA gate_summon_keeper_helper
-# AS gate armor_stand
-# AT gate armor_stand
+# AS gate_heart armor_stand
+# AT gate_heart armor_stand
 
 
 $function bmt_r:util/debug/debug {command:'say ^$(local_x) ^$(local_y) ^$(local_z) $(place_value) $(terminal_type)'}

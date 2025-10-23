@@ -1,7 +1,7 @@
 # Place the gate in correct direction
 
 # VIA purple_gate_spawn_handle
-# AS gate armor_stand
+# AS gate_heart armor_stand
 # AT @s
 
 

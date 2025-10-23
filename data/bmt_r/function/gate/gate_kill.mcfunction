@@ -1,4 +1,4 @@
-# AS gate armor_stand
+# AS gate_heart armor_stand
 # AT @s
 
 

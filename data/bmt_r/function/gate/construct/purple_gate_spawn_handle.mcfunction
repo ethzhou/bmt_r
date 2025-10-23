@@ -1,17 +1,18 @@
 # Handle spawn of gate germ
 
 # VIA purple_gate_tick
-# AS gate armor_stand
+# AS gate_heart armor_stand
 
 
 kill @n[tag=gate_germ]
 
 $say gate at $(Pos)
 
-data modify entity @s Tags set value ["gate","purple_gate"]
+# TODO rename tag to gate_heart
+data modify entity @s Tags set value ["gate_heart","purple_gate"]
 data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
-# TODO
+# TODO Invisible true
 # data modify entity @s Invisible set value true
 
 tp ~ ~1 ~
