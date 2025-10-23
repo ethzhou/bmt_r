@@ -17,4 +17,4 @@ execute rotated as @s run place template bmt_r:purple_gate ^-2 ^-1 ^-1
 
 # Summon keepers
 
-function bmt_r:gate/construct/gate_summon_keepers
+execute rotated as @s run function bmt_r:gate/construct/gate_summon_keepers
