@@ -1,1 +1,2 @@
 scoreboard objectives add test_gate_fit dummy
+scoreboard objectives modify test_gate_fit displayautoupdate true

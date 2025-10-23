@@ -1,3 +1,11 @@
+# Check the space around the spawn location
+
+# VIA purple_gate_place_[direction]
+# AS gate armor_stand
+# AT @s
+# ROTATED AS @s
+
+
 # Check air was all of the right 1 by 3 by 4 volume
 execute store result score @s test_gate_fit run fill ^-2 ^-1 ^-1 ^-2 ^1 ^2 void_air replace #air
 fill ^-2 ^-1 ^-1 ^-2 ^1 ^2 air replace void_air

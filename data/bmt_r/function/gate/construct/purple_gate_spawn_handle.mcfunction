@@ -1,4 +1,8 @@
-# CALLER gate armor_stand
+# Handle spawn of gate germ
+
+# VIA purple_gate_tick
+# AS gate armor_stand
+
 
 kill @n[tag=gate_germ]
 
@@ -11,4 +15,6 @@ data modify entity @s NoGravity set value true
 # data modify entity @s Invisible set value true
 
 tp ~ ~1 ~
+
+# Place the gate in the correct direction
 execute at @s run function bmt_r:gate/construct/purple_gate_place

@@ -1,6 +1,8 @@
-# CALLER armor_stand
+# Replace kill switch
 
-data modify storage bmt_r:temp_gate_position x set from entity @s Pos[0]
-data modify storage bmt_r:temp_gate_position y set from entity @s Pos[1]
-data modify storage bmt_r:temp_gate_position z set from entity @s Pos[2]
+# VIA gate_loop_replace_kill_switch
+# AS gate armor_stand
+
+
+function bmt_r:util/store_pos {resource_location:"bmt_r:temp_gate_position"}
 function bmt_r:gate/loop/replace_kill_switch_helper with storage bmt_r:temp_gate_position
