@@ -1,2 +1,5 @@
+scoreboard objectives add bmt_r_global dummy
+scoreboard objectives modify bmt_r_global displayautoupdate true
+
 scoreboard objectives add test_gate_fit dummy
 scoreboard objectives modify test_gate_fit displayautoupdate true
