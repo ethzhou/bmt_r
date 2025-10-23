@@ -1,5 +1,6 @@
 # Place the gate in correct direction
 
+# VIA purple_gate_spawn_handle
 # AS gate armor_stand
 # AT @s
 
@@ -23,3 +24,6 @@ execute if entity @n[tag=orientator,type=armor_stand,y_rotation=-45..45] unless 
 execute if entity @n[tag=orientator,type=armor_stand,y_rotation=45..135] unless entity @n[tag=orientator,type=armor_stand,y_rotation=135] run function bmt_r:gate/construct/purple_gate_place_east
 
 kill @n[tag=orientator,type=armor_stand]
+
+schedule clear bmt_r:gate/loop/gate_loop_replace_kill_switch
+function bmt_r:gate/loop/gate_loop_replace_kill_switch
