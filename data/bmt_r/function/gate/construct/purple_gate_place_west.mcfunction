@@ -14,3 +14,7 @@ execute store result score @s test_gate_fit rotated as @s run function bmt_r:gat
 execute if score @s test_gate_fit matches 0 run return run function bmt_r:gate/construct/gate_place_fail
 
 execute rotated as @s run place template bmt_r:purple_gate ^-2 ^-1 ^-1 clockwise_90
+
+# Summon keepers
+
+function bmt_r:gate/construct/gate_summon_keepers
