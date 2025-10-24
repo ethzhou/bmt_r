@@ -1,7 +1,7 @@
 # Place the kill switch
 # { x:, y:, z:, }
 
-# VIA gate1_replace_kill_switch WITH storage bmt_r:temp_gate_position
+# VIA gate1_replace_kill_switch WITH storage bmt_r:local
 # AS gate_heart armor_stand
 
 
