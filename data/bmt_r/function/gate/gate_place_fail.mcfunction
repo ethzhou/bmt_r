@@ -1,7 +1,7 @@
 # Cancel gate placement
 
 # TODO docs
-# VIA purple_gate1_place_[direction]
+# VIA gate_place_[direction]
 # AS gate_heart armor_stand
 
 

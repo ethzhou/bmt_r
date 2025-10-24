@@ -1,1 +1,4 @@
-execute as @e[tag=gate_heart,type=armor_stand] at @s run function bmt_r:gate/gate1/gate1_kill
+# Kill all gates
+
+
+execute as @e[tag=gate_heart,type=armor_stand] at @s run function bmt_r:gate/kill/gate_kill with entity @s data

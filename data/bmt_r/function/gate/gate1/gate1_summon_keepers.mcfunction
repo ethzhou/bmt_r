@@ -1,6 +1,6 @@
 # Summon gate keepers at terminals
 
-# VIA purple_gate1_place_[direction]
+# VIA gate_place_[direction]
 # AS gate_heart armor_stand
 # AT gate_heart armor_stand
 

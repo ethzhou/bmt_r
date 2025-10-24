@@ -1,6 +1,6 @@
 # Play non-diegetic sounds of gate kill
 
-# VIA gate1_kill_play_sounds
+# VIA gate_kill_play_sounds
 # AS gate_heart armor_stand
 # AT @s
 
