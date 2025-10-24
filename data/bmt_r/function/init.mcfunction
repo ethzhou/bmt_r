@@ -122,7 +122,7 @@ data modify storage bmt_r:gate_keepers blueprints set value {\
             local_x: 1,\
             local_y: 14,\
             local_z: 0,\
-            place_value: 32768,\
+            place_value: -32768,\
             terminal_type: input,\
         },\
     ],\
