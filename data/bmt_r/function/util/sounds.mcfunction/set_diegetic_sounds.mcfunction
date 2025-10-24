@@ -1,0 +1,1 @@
+scoreboard players set #diegetic_sounds bmt_r_global 1

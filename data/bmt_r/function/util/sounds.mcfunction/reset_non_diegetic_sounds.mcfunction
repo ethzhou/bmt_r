@@ -1,0 +1,1 @@
+scoreboard players set #non_diegetic_sounds bmt_r_global 0

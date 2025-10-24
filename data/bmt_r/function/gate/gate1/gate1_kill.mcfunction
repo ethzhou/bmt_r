@@ -17,6 +17,10 @@ execute if entity @s[y_rotation=-45..45] unless entity @s[y_rotation=45] run pla
 # W
 execute if entity @s[y_rotation=45..135] unless entity @s[y_rotation=135] run place template bmt_r:gate1_null ^-2 ^-1 ^-1 clockwise_90
 
+# Play sounds
+
+function bmt_r:gate/gate1/gate1_kill_play_sounds
+
 # Kill armor stands
 
 kill

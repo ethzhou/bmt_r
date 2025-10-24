@@ -1,6 +1,10 @@
 scoreboard objectives add bmt_r_global dummy
 scoreboard objectives modify bmt_r_global displayautoupdate true
 
+scoreboard players set #debug bmt_r_global 0
+scoreboard players set #diegetic_sounds bmt_r_global 1
+scoreboard players set #non_diegetic_sounds bmt_r_global 1
+
 scoreboard objectives add test_gate_fit dummy
 scoreboard objectives modify test_gate_fit displayautoupdate true
 
