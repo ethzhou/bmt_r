@@ -1,5 +1,5 @@
 # Create gate in the world facing east
-# { color:, bits:, }
+# { bits:, color:, }
 
 # VIA gate_place
 # AS gate_heart armor_stand
