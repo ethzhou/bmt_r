@@ -3,7 +3,7 @@
 
 # VIA gate_summon_keeper_helper
 # AS gate_keeper armor_stand
-# AT gate_heart armor_stand
+# AT @s
 
 
 $function bmt_r:util/debug/debug {command:'say ^$(local_x) ^$(local_y) ^$(local_z) $(place_value) $(terminal_type)'}

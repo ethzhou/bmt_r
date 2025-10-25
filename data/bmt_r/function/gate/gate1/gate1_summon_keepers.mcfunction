@@ -1,8 +1,10 @@
 # Summon gate keepers at terminals
+# { terminal_type:, index:, }
 
 # VIA gate_place_[direction]
 # AS gate_heart armor_stand
-# AT gate_heart armor_stand
+# AT @s
+
 
 function bmt_r:gate/gate_summon_keeper {terminal_type:input,index:0}
 function bmt_r:gate/gate_summon_keeper {terminal_type:input,index:8}
