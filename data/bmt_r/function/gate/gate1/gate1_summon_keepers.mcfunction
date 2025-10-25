@@ -6,6 +6,6 @@
 # AT @s
 
 
-function bmt_r:gate/gate_summon_keeper {terminal_type:input,index:0}
-function bmt_r:gate/gate_summon_keeper {terminal_type:input,index:8}
-function bmt_r:gate/gate_summon_keeper {terminal_type:output,index:0}
+function bmt_r:gate/construct/gate_summon_keeper {terminal_type:input,index:0}
+function bmt_r:gate/construct/gate_summon_keeper {terminal_type:input,index:8}
+function bmt_r:gate/construct/gate_summon_keeper {terminal_type:output,index:0}
