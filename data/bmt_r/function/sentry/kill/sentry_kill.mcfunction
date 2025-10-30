@@ -4,15 +4,6 @@
 # AT @s
 
 
-# TODO
-# delete components
-
-
-
-
-
-
-
 setblock ~ ~ ~ air destroy
 
 # Play sounds
