@@ -1,6 +1,7 @@
 {
     "values": [
         "bmt_r:gate/gate_tick",
+        "bmt_r:sentry/sentry_tick",
         "bmt_r:util/debug/detect_void_air"
     ]
 }
