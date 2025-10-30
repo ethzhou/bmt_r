@@ -1,5 +1,4 @@
 # Summon gate keepers at terminals
-# { terminal_type:, index:, }
 
 # VIA gate_place_[direction]
 # AS gate_heart armor_stand

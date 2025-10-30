@@ -1,9 +1,11 @@
 # Help summon keeper armor stand with the specified keeper blueprint
 # { local_x:, local_y:, local_z:, place_value:, terminal_type:, }
 
-# VIA gate_summon_keeper_helper
+
+# TODO AT is incorrect (because summon subcommand does not change AT).
+# VIA gate_summon_keeper
 # AS gate_keeper armor_stand
-# AT @s
+# AT gate_heart armor_stand
 
 
 $function bmt_r:util/debug/debug {command:'say ^$(local_x) ^$(local_y) ^$(local_z) $(place_value) $(terminal_type)'}

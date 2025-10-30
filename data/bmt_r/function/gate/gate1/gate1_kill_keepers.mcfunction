@@ -1,5 +1,4 @@
 # Kill gate keepers at terminals
-# { terminal_type:, index:, }
 
 # VIA gate_kill
 # AS gate_heart armor_stand
