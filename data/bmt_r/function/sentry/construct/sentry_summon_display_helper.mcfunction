@@ -9,7 +9,7 @@
 $function bmt_r:util/debug/debug {command:'say ~ ~$(local_y) ~ $(place_value) $(terminal)'}
 
 $data modify entity @s block_state set value {Name:$(color)_stained_glass}
-$data modify entity @s Tags set value ["sentry_display","sentry_display_$(terminal)","sentry_display_$(color)"]
+$data modify entity @s Tags set value ["sentry_display","sentry_display_$(terminal)","$(color)_sentry_display"]
 
 # Rotate the main diagonal (between (0, 0, 0) and (1, 1, 1)) onto y-axis
 data modify entity @s transformation merge value {right_rotation:[-0.279848,0.115917,0.364705,0.880476],scale:[.2,.2,.2]}
