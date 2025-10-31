@@ -6,6 +6,6 @@
 # AT ~ ~.4 ~
 
 
-# $function bmt_r:util/debug/debug {command:'execute positioned ~ ~$(local_y) ~ unless entity @n[distance=..0.5,tag=sentry_display,type=block_display] run tellraw @a {"color":"gold","text":"warning: no display found during kill"}'}
+$function bmt_r:util/debug/debug {command:'execute positioned ~ ~$(local_y) ~ unless entity @n[distance=..0.5,tag=sentry_display,type=block_display] run tellraw @a {"color":"gold","text":"warning: no display found during kill"}'}
 
-$execute positioned ~ ~$(local_y) ~ run return run kill @n[distance=..0.5,tag=sentry_display,type=block_display]
+$execute positioned ~ ~$(local_y) ~ run return run kill @n[distance=..0.5,tag=sentry_display,tag=sentry_display_$(terminal),type=block_display]
