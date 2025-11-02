@@ -1,6 +1,7 @@
 {
     "values": [
         "#bmt_r:loop",
-        "bmt_r:init"
-    ]
+        "bmt_r:init_debug"
+    ],
+    "_# TODO":"replace bmt_r:init_debug with bmt_r:init"
 }

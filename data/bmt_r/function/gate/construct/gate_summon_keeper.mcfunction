@@ -6,4 +6,5 @@
 # AT @s
 
 
+$data modify storage bmt_r:gate_keepers blueprints.$(terminal_type)[$(index)] merge from entity @s data
 $execute summon armor_stand run function bmt_r:gate/construct/gate_summon_keeper_helper with storage bmt_r:gate_keepers blueprints.$(terminal_type)[$(index)]

@@ -9,6 +9,8 @@ scoreboard players set #non_diegetic_sounds bmt_r_global 1
 scoreboard players set #1 bmt_r_global 1
 scoreboard players set #2 bmt_r_global 2
 
+scoreboard players set #calibration bmt_r_global 0
+
 scoreboard objectives add bmt_r_local dummy
 scoreboard objectives modify bmt_r_local displayautoupdate true
 
@@ -25,6 +27,22 @@ scoreboard objectives modify bmt_r_gate_inputs displayautoupdate true
 
 scoreboard objectives add bmt_r_sentry_values dummy
 scoreboard objectives modify bmt_r_sentry_values displayautoupdate true
+
+scoreboard objectives add bmt_r_calibration dummy
+scoreboard objectives modify bmt_r_calibration displayautoupdate true
+
+scoreboard objectives add bmt_r_powers_of_2 dummy
+scoreboard objectives modify bmt_r_powers_of_2 displayautoupdate true
+
+scoreboard players set #0 bmt_r_powers_of_2 1
+scoreboard players set #1 bmt_r_powers_of_2 2
+scoreboard players set #2 bmt_r_powers_of_2 4
+scoreboard players set #3 bmt_r_powers_of_2 8
+scoreboard players set #4 bmt_r_powers_of_2 16
+scoreboard players set #5 bmt_r_powers_of_2 32
+scoreboard players set #6 bmt_r_powers_of_2 64
+scoreboard players set #7 bmt_r_powers_of_2 128
+scoreboard players set #8 bmt_r_powers_of_2 256
 
 data modify storage bmt_r:gate_keepers blueprints set value {\
     input: [\
@@ -328,4 +346,15 @@ data modify storage bmt_r:sentry_displays blueprints set value {\
             terminal: Q,\
         },\
     ]\
+}
+
+data modify storage bmt_r:calibration input_sets set value {\
+    "1": [1, 256],\
+    "2": [1, 2, 256, 512],\
+    "3": [],\
+    "4": [],\
+    "5": [],\
+    "6": [],\
+    "7": [],\
+    "8": [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, -32768]\
 }

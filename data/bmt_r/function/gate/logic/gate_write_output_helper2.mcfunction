@@ -12,6 +12,6 @@ setblock ~ ~ ~ repeater[powered=false]
 
 # Conditionally power the repeater
 
-$execute if data entity @s data.active_at_inputs[$(input_vector)] run return run setblock ~ ~ ~ repeater[powered=true]
+$execute if data entity @s data.fiber[$(input_vector)] run return run setblock ~ ~ ~ repeater[powered=true]
 
 function bmt_r:util/debug/debug {command:'say did power'}

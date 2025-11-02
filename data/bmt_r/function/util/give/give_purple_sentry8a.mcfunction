@@ -1,0 +1,1 @@
+give @s endermite_spawn_egg[enchantment_glint_override=false,item_name={"color":"dark_purple","font":"bmt_r:raleway-regular","text":"8-Bit Input Sentry A","underlined":true},entity_data={id:"minecraft:endermite",NoAI:1b,Tags:["sentry_germ","sentry8_germ","sentryA_germ","purple_sentry_germ"],CustomName:"purple_sentry8A"}] 1

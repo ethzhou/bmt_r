@@ -1,1 +1,0 @@
-execute as @n[tag=gate_heart,type=armor_stand] at @s run function bmt_r:util/calibrate_helper with entity @s

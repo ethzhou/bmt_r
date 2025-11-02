@@ -13,3 +13,6 @@ execute as @e[tag=sentry_germ,tag=sentry8_germ,tag=sentryQ_germ,tag=purple_sentr
 
 # Update sentry
 execute as @e[tag=sentry_heart] at @s run function #bmt_r:sentry_update with entity @s data
+
+# Run calibration
+function bmt_r:calibrate/calibrate_manage_state

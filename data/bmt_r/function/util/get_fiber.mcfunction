@@ -1,0 +1,1 @@
+tellraw @s {source:"entity",entity:"@n[tag=gate_keeper_output,type=armor_stand]",nbt:"data.fiber"}

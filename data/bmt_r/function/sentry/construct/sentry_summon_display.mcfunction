@@ -6,5 +6,5 @@
 # AT @s
 
 
-$data modify storage bmt_r:sentry_displays blueprints.$(terminal)[$(index)].color set from entity @s data.color
+$data modify storage bmt_r:sentry_displays blueprints.$(terminal)[$(index)] merge from entity @s data
 $execute summon block_display run function bmt_r:sentry/construct/sentry_summon_display_helper with storage bmt_r:sentry_displays blueprints.$(terminal)[$(index)]

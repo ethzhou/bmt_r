@@ -1,0 +1,41 @@
+Gate calibration runs through all combinations of inputs at the A and B sentries to test which outputs are on at which inputs. At each input vector, each bit of output at sentry Q checks whether it is powered; if so, it appends the input vector to the respective fiber in command storage. Here, for each given bit, a fiber represents the set of inputs that map to 1 at the output bit.
+
+During calibration, input vectors are represented both as integers and lists. In 1-bit gates, the two input bits are defined with place values 256 and 1; when both input bits are on, the input vector as an integer is 257 and as a list is [1, 1].
+
+The calibration finite state machine is outlined below. At each tick, sentry_tick runs calibration_manage_state, which executes the corresponding task according to the state.
+
+
+calibration state machine
+    0 no calibration in progress
+
+    2a
+        - read results and update fiber data
+            - update the fibers.
+            - if the input vector is all 1s, move to state 4. otherwise, move to state 2.
+            - TODO currently most logic is in calibrate_recurse_base and calibrate_recurse_base_helper
+    2b *follows 2a in the same tick
+        - find the next input vector
+            - traverse the input vector stack in order, flipping each bit, until a 0 is flipped to 1.
+            - move to state 3.
+            - TODO currently most logic is in calibrate_recurse and calibrate_recurse_epilogue
+    3 redstone propagation
+        - decrement a counter.
+        - if the counter reached 0, move to state 2.
+        - TODO currently most logic is in calibrate_prepare_read
+
+    pseudo-states
+        1 prepare calibration
+            - etc.
+            - run state 2
+            - TODO currently most logic is in calibrate
+        4 epilogue
+            - copy the new fibers to the appropriate output keepers.
+            - etc.
+            - TODO currently most logic is in calibrate_epilogue
+
+The distinction between state and pseudo-state is that the pseudo-states run on the same tick as an actual state. Each tick, the state manager runs an actual state. Thus there are only 2 actual states during calibration, in addition to state 0 when the system is not in calibration. The pseudo-states are for conceptual organization.
+
+calibrate.mcfunction enters through pseudo-state 1, moves to state 3.
+
+    TODO
+
