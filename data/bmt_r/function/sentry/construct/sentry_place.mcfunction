@@ -6,9 +6,9 @@
 # AT @s
 
 
-execute at @s run summon minecraft:block_display ~-0.5 ~ ~-0.5 {block_state:{Name:beacon},Tags:["sentry_base"]}
 $setblock ~-0.5 ~ ~-0.5 $(color)_stained_glass
 
-# Summon displays
+# Summon entities
 
+function bmt_r:sentry/construct/sentry_summon_base
 function bmt_r:sentry/construct/sentry_summon_displays with entity @s data
