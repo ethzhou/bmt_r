@@ -12,7 +12,8 @@ $data modify entity @s block_state set value {Name:$(color)_stained_glass}
 $data modify entity @s Tags set value ["sentry_display","sentry$(bits)_display","sentry$(terminal)_display","$(color)_sentry_display"]
 
 # Rotate the main diagonal (between (0, 0, 0) and (1, 1, 1)) onto y-axis
-data modify entity @s transformation merge value {right_rotation:[-0.279848,0.115917,0.364705,0.880476],scale:[.2,.2,.2]}
+execute if entity @s[tag=!sentryQ_display] run data modify entity @s transformation merge value {right_rotation:[-0.279848,0.115917,0.364705,0.880476],scale:[0.2,0.2,0.2]}
+execute if entity @s[tag=sentryQ_display] run data modify entity @s transformation merge value {translation:[-0.15,-0.15,-0.15],scale:[0.3,0.3,0.3]}
 
 $tp ~ ~$(local_y) ~
 
