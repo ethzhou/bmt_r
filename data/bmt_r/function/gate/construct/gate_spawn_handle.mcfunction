@@ -11,8 +11,7 @@ $data modify entity @s Tags set value ["gate_heart","gate$(bits)","$(color)_gate
 $data modify entity @s data set value {bits:$(bits),color:$(color)}
 data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
-# TODO Invisible true
-# data modify entity @s Invisible set value true
+data modify entity @s Invisible set value true
 
 tp ~ ~1 ~
 

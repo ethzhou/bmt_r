@@ -15,8 +15,7 @@ $tp ^$(local_x) ^$(local_y) ^$(local_z)
 $data modify entity @s Tags set value ["gate_keeper","gate$(bits)","gate_keeper_$(terminal_type)","$(color)_gate_keeper"]
 data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
-# TODO Invisible true
-# data modify entity @s Invisible set value true
+data modify entity @s Invisible set value true
 $scoreboard players set @s bmt_r_gate_inputs $(place_value)
 
 # Set default fiber, but copy fiber from storage if the data exists

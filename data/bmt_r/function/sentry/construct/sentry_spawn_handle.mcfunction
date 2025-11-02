@@ -13,8 +13,7 @@ $data modify entity @s Tags set value ["sentry_heart","sentry$(bits)","sentry$(t
 $data modify entity @s data set value {color:$(color),bits:$(bits),terminal:$(terminal)}
 data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
-# TODO Invisible true
-# data modify entity @s Invisible set value true
+data modify entity @s Invisible set value true
 
 tp ~ ~ ~
 
