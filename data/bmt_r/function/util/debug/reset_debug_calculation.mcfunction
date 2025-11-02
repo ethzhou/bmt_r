@@ -1,0 +1,1 @@
+scoreboard players set #debug_calculation bmt_r_global 0

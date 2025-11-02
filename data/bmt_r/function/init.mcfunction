@@ -2,7 +2,9 @@ scoreboard objectives add bmt_r_global dummy
 scoreboard objectives modify bmt_r_global displayautoupdate true
 
 scoreboard players set #debug bmt_r_global 0
+scoreboard players set #debug_calculation bmt_r_global 0
 scoreboard players set #detect_void_air bmt_r_global 0
+
 scoreboard players set #diegetic_sounds bmt_r_global 1
 scoreboard players set #non_diegetic_sounds bmt_r_global 1
 
