@@ -6,7 +6,7 @@
 # AT @s
 
 
-$function bmt_r:util/debug/debug {command:'say ^$(local_x) ^$(local_y) ^$(local_z) $(place_value) $(terminal_type)'}
-$function bmt_r:util/debug/debug {command:'execute positioned ^$(local_x) ^$(local_y) ^$(local_z) unless entity @n[distance=..0.1,tag=gate_keeper,type=armor_stand] run tellraw @a {"color":"gold","text":"warning: no keeper found during write"}'}
+# $function bmt_r:util/debug/debug_calculation {command:'say ^$(local_x) ^$(local_y) ^$(local_z) $(place_value) $(terminal_type)'}
+$function bmt_r:util/debug/debug_calculation {command:'execute positioned ^$(local_x) ^$(local_y) ^$(local_z) unless entity @n[distance=..0.1,tag=gate_keeper,type=armor_stand] run tellraw @a {"color":"gold","text":"warning: no keeper found during write"}'}
 
-$execute positioned ^$(local_x) ^$(local_y) ^$(local_z) as @n[distance=..0.1,tag=gate_keeper,type=armor_stand] at @n run return run function bmt_r:gate/logic/gate_write_output_helper2 with storage bmt_r:local input_vector
+$execute positioned ^$(local_x) ^$(local_y) ^$(local_z) as @n[distance=..0.1,tag=gate_keeper,tag=gate_keeper_output,type=armor_stand] at @n run return run function bmt_r:gate/logic/gate_write_output_helper2 with storage bmt_r:local

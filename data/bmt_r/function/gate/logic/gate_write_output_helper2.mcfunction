@@ -6,12 +6,10 @@
 # AT @s
 
 
-# Replace the repeater
-
-setblock ~ ~ ~ repeater[powered=false]
-
 # Conditionally power the repeater
 
-$execute if data entity @s data.fiber[$(input_vector)] run return run setblock ~ ~ ~ repeater[powered=true]
+$function bmt_r:util/debug/debug_calculation {command:'tellraw @a {color:"light_purple","text":"$(input_vector)"}'}
 
-function bmt_r:util/debug/debug {command:'say did power'}
+$function bmt_r:util/debug/debug_calculation {command:'execute if entity @s[nbt={data:{fiber:[$(input_vector)]}}] run tellraw @a {color:"white","text":"output is powered"}'}
+$function bmt_r:util/debug/debug_calculation {command:'execute unless entity @s[nbt={data:{fiber:[$(input_vector)]}}] run tellraw @a {color:"gray","text":"output is not powered"}'}
+$execute if entity @s[nbt={data:{fiber:[$(input_vector)]}}] run return run setblock ~ ~ ~ repeater[powered=true]
