@@ -27,4 +27,4 @@ function bmt_r:gate/kill/gate_kill_play_sounds with entity @s data
 # Kill armor stands
 
 kill
-$function bmt_r:gate/gate$(bits)/gate$(bits)_kill_keepers
+function bmt_r:gate/kill/gate_kill_keepers with entity @s data

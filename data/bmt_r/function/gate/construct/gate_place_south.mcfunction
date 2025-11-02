@@ -21,4 +21,4 @@ $function bmt_r:gate/gate$(bits)/sound/gate$(bits)_place_play_sounds
 
 # Summon keepers
 
-$execute rotated as @s run function bmt_r:gate/gate$(bits)/gate$(bits)_summon_keepers
+execute rotated as @s run function bmt_r:gate/construct/gate_summon_keepers with entity @s data

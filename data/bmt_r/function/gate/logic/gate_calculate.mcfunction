@@ -1,5 +1,4 @@
 # Read inputs and yield output
-# { bit:, }
 
 # VIA gate_tick
 # AS gate_heart armor_stand
@@ -10,7 +9,7 @@ scoreboard players set #current_gate bmt_r_gate_inputs 0
 
 # Read inputs
 
-$function bmt_r:gate/gate$(bits)/gate$(bits)_read_inputs
+function bmt_r:gate/logic/gate_read_inputs with entity @s data
 
 # Write input to command storage
 
@@ -18,4 +17,4 @@ execute store result storage bmt_r:local input_vector.input_vector.key short 1 r
 
 # Write outputs
 
-$function bmt_r:gate/gate$(bits)/gate$(bits)_write_outputs
+function bmt_r:gate/logic/gate_write_outputs with entity @s data
