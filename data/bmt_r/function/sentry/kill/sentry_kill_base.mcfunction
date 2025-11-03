@@ -5,6 +5,6 @@
 # AT @s
 
 
-function bmt_r:util/debug/debug {command:'execute positioned ~-.5 ~ ~-.5 run tellraw @a {"color":"gold","text":"warning: no base found during kill"}'}
+function bmt_r:util/debug/debug {command:'execute positioned ~-.5 ~ ~-.5 unless entity @n[distance=..0.1,tag=sentry_base,type=block_display] run tellraw @a {"color":"gold","text":"warning: no base found during kill"}'}
 
 execute positioned ~-.5 ~ ~-.5 run kill @n[distance=..0.1,tag=sentry_base,type=block_display]
