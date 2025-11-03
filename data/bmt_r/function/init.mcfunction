@@ -27,6 +27,9 @@ scoreboard objectives modify bmt_r_gate_bits displayautoupdate true
 scoreboard objectives add bmt_r_gate_inputs dummy
 scoreboard objectives modify bmt_r_gate_inputs displayautoupdate true
 
+scoreboard objectives add bmt_r_gate_facing dummy
+scoreboard objectives modify bmt_r_gate_facing displayautoupdate true
+
 scoreboard objectives add bmt_r_sentry_values dummy
 scoreboard objectives modify bmt_r_sentry_values displayautoupdate true
 

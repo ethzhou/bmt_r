@@ -6,7 +6,10 @@
 # AT @s
 
 
+# Set rotation
+
 rotate @s 180 0
+execute store result score @s bmt_r_gate_facing run data get entity @s Rotation[0]
 
 # Check for space before placing the structure template facing south
 

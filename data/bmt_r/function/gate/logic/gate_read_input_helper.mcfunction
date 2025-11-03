@@ -11,7 +11,7 @@ $function bmt_r:util/debug/debug_calculation {command:'execute positioned ^$(loc
 
 # Replace repeater if necessary
 
-$execute unless block ^$(local_x) ^$(local_y) ^$(local_z) minecraft:repeater[powered=true] run setblock ^$(local_x) ^$(local_y) ^$(local_z) repeater[powered=false]
+$execute positioned ^$(local_x) ^$(local_y) ^$(local_z) unless block ~ ~ ~ minecraft:repeater[powered=true] run function bmt_r:gate/logic/gate_replace_repeater with entity @s data
 
 # Contribute score
 
