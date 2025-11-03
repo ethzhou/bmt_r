@@ -17,6 +17,7 @@ data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
 data modify entity @s Invisible set value true
 $scoreboard players set @s bmt_r_gate_inputs $(place_value)
+execute store result score @s bmt_r_gate_facing as @n[tag=gate_heart,type=armor_stand] run scoreboard players get @s bmt_r_gate_facing
 
 # Set default fiber, but copy fiber from storage if the data exists
 data modify entity @s data.fiber set value []

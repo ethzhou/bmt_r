@@ -1,8 +1,8 @@
 # Place repeater at keeper facing gate direction
+# { powered:, }
 
 
-# AS gate_heart armor_stand
-# AT gate_keeper armor_stand
+# AS armor_stand
 
 
 # Note that the repeaters "face" their back ends
