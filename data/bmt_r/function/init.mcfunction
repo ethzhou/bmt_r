@@ -36,6 +36,14 @@ scoreboard objectives modify bmt_r_calibration displayautoupdate true
 scoreboard objectives add bmt_r_powers_of_2 dummy
 scoreboard objectives modify bmt_r_powers_of_2 displayautoupdate true
 
+scoreboard objectives add bmt_r_selected_item_slot dummy
+scoreboard objectives modify bmt_r_selected_item_slot displayautoupdate true
+scoreboard players set @a bmt_r_selected_item_slot -1
+
+scoreboard objectives add bmt_r_previous_selected_item_slot dummy
+scoreboard objectives modify bmt_r_previous_selected_item_slot displayautoupdate true
+scoreboard players set @a bmt_r_previous_selected_item_slot -1
+
 scoreboard players set #0 bmt_r_powers_of_2 1
 scoreboard players set #1 bmt_r_powers_of_2 2
 scoreboard players set #2 bmt_r_powers_of_2 4
