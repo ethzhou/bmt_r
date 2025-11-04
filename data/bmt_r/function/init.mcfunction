@@ -20,9 +20,8 @@ scoreboard objectives modify bmt_r_local displayautoupdate true
 scoreboard objectives add test_gate_fit dummy
 scoreboard objectives modify test_gate_fit displayautoupdate true
 
-# TODO list gate hearts under this objective according to their number of bits
-scoreboard objectives add bmt_r_gate_bits dummy
-scoreboard objectives modify bmt_r_gate_bits displayautoupdate true
+scoreboard objectives add bmt_r_bits dummy
+scoreboard objectives modify bmt_r_bits displayautoupdate true
 
 scoreboard objectives add bmt_r_gate_inputs dummy
 scoreboard objectives modify bmt_r_gate_inputs displayautoupdate true

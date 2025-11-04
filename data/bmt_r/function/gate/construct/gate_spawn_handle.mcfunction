@@ -13,6 +13,8 @@ data modify entity @s NoAI set value true
 data modify entity @s NoGravity set value true
 data modify entity @s Invisible set value true
 
+$scoreboard players set @s bmt_r_bits $(bits)
+
 tp ~ ~1 ~
 
 # Place the gate in the correct direction
