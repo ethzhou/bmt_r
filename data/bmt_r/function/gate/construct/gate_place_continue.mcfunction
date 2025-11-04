@@ -6,6 +6,10 @@
 # ROTATED 0
 
 
+# Replace color
+
+function bmt_r:gate/construct/gate_color with entity @s data
+
 # Play sounds
 
 $function bmt_r:gate/gate$(bits)/sound/gate$(bits)_place_play_sounds
