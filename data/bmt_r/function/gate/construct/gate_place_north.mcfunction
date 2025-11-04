@@ -18,7 +18,7 @@ execute if score @s test_gate_fit matches 0 run return run function bmt_r:gate/c
 
 # Place structure template
 
-$execute rotated as @s run place template bmt_r:$(color)_gate$(bits) ^-2 ^-1 ^-1 180
+$execute rotated as @s run place template bmt_r:$(color)_gate$(bits) ^-1 ^-1 ^-1 180
 $function bmt_r:gate/gate$(bits)/sound/gate$(bits)_place_play_sounds
 
 # Summon keepers

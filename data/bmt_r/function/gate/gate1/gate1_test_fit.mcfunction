@@ -3,40 +3,41 @@
 # VIA gate_place_[direction]
 # AS gate_heart armor_stand
 # AT @s
-# ROTATED AS @s
 
 
-# Check air was all of the right 1 by 3 by 4 volume
-execute store result score @s test_gate_fit run fill ^-2 ^-1 ^-1 ^-2 ^1 ^2 void_air replace #air
-fill ^-2 ^-1 ^-1 ^-2 ^1 ^2 air replace void_air
-function bmt_r:util/debug/debug {command:"say starboard"}
+# Check air was all of the main volume of the gate
+execute store result score @s test_gate_fit run fill ^-1 ^-1 ^0 ^1 ^-1 ^1 void_air replace #air
+fill ^-1 ^-1 ^0 ^1 ^-1 ^1 air replace void_air
+function bmt_r:util/debug/debug {command:"say main"}
 function bmt_r:util/debug/debug {command:'tellraw @a {"score":{"name":"@s","objective":"test_gate_fit"}}'}
-execute if score @s test_gate_fit matches ..11 run return fail
+execute if score @s test_gate_fit matches ..5 run return fail
 
-# Check air was all of the left 1 by 3 by 4 volume
-execute store result score @s test_gate_fit run fill ^2 ^-1 ^-1 ^2 ^1 ^2 void_air replace #air
-fill ^2 ^-1 ^-1 ^2 ^1 ^2 air replace void_air
-function bmt_r:util/debug/debug {command:'say port'}
+# Check air was all of the left tail of the gate
+execute store result score @s test_gate_fit run fill ^-1 ^-1 ^-1 ^-1 ^0 ^-1 void_air replace #air
+fill ^-1 ^-1 ^-1 ^-1 ^0 ^-1 air replace void_air
+function bmt_r:util/debug/debug {command:'say left tail'}
 function bmt_r:util/debug/debug {command:'tellraw @a {"score":{"name":"@s","objective":"test_gate_fit"}}'}
-execute if score @s test_gate_fit matches ..11 run return fail
+execute if score @s test_gate_fit matches ..1 run return fail
 
-# etc.
-execute store result score @s test_gate_fit run fill ^-1 ^-1 ^0 ^1 ^1 ^2 void_air replace #air
-fill ^-1 ^-1 ^-1 ^1 ^1 ^3 air replace void_air
-function bmt_r:util/debug/debug {command:'say hull'}
+# Check air was all of the right tail of the gate
+execute store result score @s test_gate_fit run fill ^1 ^-1 ^-1 ^1 ^0 ^-1 void_air replace #air
+fill ^1 ^-1 ^-1 ^1 ^0 ^-1 air replace void_air
+function bmt_r:util/debug/debug {command:'say right tail'}
 function bmt_r:util/debug/debug {command:'tellraw @a {"score":{"name":"@s","objective":"test_gate_fit"}}'}
-execute if score @s test_gate_fit matches ..26 run return fail
+execute if score @s test_gate_fit matches ..1 run return fail
 
-execute store result score @s test_gate_fit run fill ^-1 ^-1 ^-1 ^1 ^-1 ^-1 void_air replace #air
-fill ^-1 ^-1 ^-1 ^1 ^-1 ^-1 air replace void_air
-function bmt_r:util/debug/debug {command:'say stern'}
-function bmt_r:util/debug/debug {command:'tellraw @a {"score":{"name":"@s","objective":"test_gate_fit"}}'}
-execute if score @s test_gate_fit matches ..2 run return fail
-
-execute store result score @s test_gate_fit run fill ^-1 ^1 ^3 ^1 ^1 ^3 void_air replace #air
-fill ^-1 ^1 ^3 ^1 ^1 ^3 air replace void_air
-function bmt_r:util/debug/debug {command:'say bow'}
+# Check air was all of the volume of the upper strip of carpet
+execute store result score @s test_gate_fit run fill ^-1 ^0 ^0 ^1 ^0 ^0 void_air replace #air
+fill ^-1 ^0 ^0 ^1 ^0 ^0 air replace void_air
+function bmt_r:util/debug/debug {command:'say upper strip'}
 function bmt_r:util/debug/debug {command:'tellraw @a {"score":{"name":"@s","objective":"test_gate_fit"}}'}
 execute if score @s test_gate_fit matches ..2 run return fail
+
+# Check air was the position of the highest output keeper
+execute store result score @s test_gate_fit run fill ^0 ^0 ^1 ^0 ^0 ^1 void_air replace #air
+fill ^0 ^0 ^1 ^0 ^0 ^1 air replace void_air
+function bmt_r:util/debug/debug {command:'say highest output keeper'}
+function bmt_r:util/debug/debug {command:'tellraw @a {"score":{"name":"@s","objective":"test_gate_fit"}}'}
+execute if score @s test_gate_fit matches 0 run return fail
 
 return 1

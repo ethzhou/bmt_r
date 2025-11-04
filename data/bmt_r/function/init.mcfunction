@@ -62,112 +62,112 @@ data modify storage bmt_r:gate_keepers blueprints set value {\
         {\
             local_x: -1,\
             local_y: 0,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 1,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 2,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 2,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 4,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 4,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 6,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 8,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 8,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 16,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 10,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 32,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 12,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 64,\
             terminal_type: input,\
         },\
         {\
             local_x: -1,\
             local_y: 14,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 128,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 0,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 256,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 2,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 512,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 4,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 1024,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 6,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 2048,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 8,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 4096,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 10,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 8192,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 12,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: 16384,\
             terminal_type: input,\
         },\
         {\
             local_x: 1,\
             local_y: 14,\
-            local_z: 0,\
+            local_z: -1,\
             place_value: -32768,\
             terminal_type: input,\
         },\
