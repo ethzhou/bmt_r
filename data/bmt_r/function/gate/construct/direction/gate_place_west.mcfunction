@@ -1,14 +1,15 @@
-# Create gate in the world facing east
+# Create gate in the world facing west
 # { bits:, color:, }
 
 # VIA gate_place
 # AS gate_heart armor_stand
 # AT @s
+# ROTATED 0
 
 
 # Set rotation
 
-rotate @s -90 0
+rotate @s 90 0
 execute store result score @s bmt_r_gate_facing run data get entity @s Rotation[0]
 
 # Check for space before placing the structure template facing south
@@ -18,9 +19,7 @@ execute if score @s test_gate_fit matches 0 run return run function bmt_r:gate/c
 
 # Place structure template
 
-$execute rotated as @s run place template bmt_r:$(color)_gate$(bits) ^-1 ^-1 ^-1 counterclockwise_90
-$function bmt_r:gate/gate$(bits)/sound/gate$(bits)_place_play_sounds
+$execute rotated as @s run place template bmt_r:$(color)_gate$(bits) ^-1 ^-1 ^-1 clockwise_90
 
-# Summon keepers
 
-execute rotated as @s run function bmt_r:gate/construct/gate_summon_keepers with entity @s data
+execute rotated as @s run function bmt_r:gate/construct/gate_place_continue with entity @s data

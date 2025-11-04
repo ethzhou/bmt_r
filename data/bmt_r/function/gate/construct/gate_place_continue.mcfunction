@@ -1,0 +1,15 @@
+# Continue placing the gate after selecting cardinal direction
+
+# VIA gate_place_[direction]
+# AS gate_heart armor_stand
+# AT @s
+# ROTATED 0
+
+
+# Play sounds
+
+$function bmt_r:gate/gate$(bits)/sound/gate$(bits)_place_play_sounds
+
+# Summon keepers
+
+execute rotated as @s run function bmt_r:gate/construct/gate_summon_keepers with entity @s data

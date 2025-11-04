@@ -1,6 +1,6 @@
 # Play sounds at gate place
 
-# VIA gate_place_[direction]
+# VIA gate_place_continue
 # AS gate_heart armor_stand
 # AT @s
 

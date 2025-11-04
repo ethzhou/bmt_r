@@ -4,6 +4,7 @@
 # VIA gate_place
 # AS gate_heart armor_stand
 # AT @s
+# ROTATED 0
 
 
 # Set rotation
@@ -20,8 +21,6 @@ execute if score @s test_gate_fit matches 0 run return run function bmt_r:gate/c
 # Place structure template
 
 $execute rotated as @s run place template bmt_r:$(color)_gate$(bits) ^-1 ^-1 ^-1
-$function bmt_r:gate/gate$(bits)/sound/gate$(bits)_place_play_sounds
 
-# Summon keepers
 
-execute rotated as @s run function bmt_r:gate/construct/gate_summon_keepers with entity @s data
+execute rotated as @s run function bmt_r:gate/construct/gate_place_continue with entity @s data
