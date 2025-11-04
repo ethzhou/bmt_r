@@ -16,10 +16,6 @@ scoreboard players set #calibration bmt_r_global 0
 scoreboard objectives add bmt_r_local dummy
 scoreboard objectives modify bmt_r_local displayautoupdate true
 
-# TODO refactor under bmt_r_local objective
-scoreboard objectives add test_gate_fit dummy
-scoreboard objectives modify test_gate_fit displayautoupdate true
-
 scoreboard objectives add bmt_r_bits dummy
 scoreboard objectives modify bmt_r_bits displayautoupdate true
 
