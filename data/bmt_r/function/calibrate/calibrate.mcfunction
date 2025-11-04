@@ -61,8 +61,12 @@ function bmt_r:util/debug/debug {command:'tellraw @p {source:"storage",storage:"
 # Set blocks at displays
 $execute as @e[tag=sentry_display,tag=sentryA_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ bedrock
 $execute as @e[tag=sentry_display,tag=sentryB_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ bedrock
-$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ redstone_lamp
-# Update lamps immediately
-$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~-1 ~ air destroy
+# Place rail
+$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~-1 ~ acacia_slab[type=top]
+$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ powered_rail
+# Update rails immediately
+gamerule doTileDrops false
+$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~-1 ~ quartz_slab[type=top]
+gamerule doTileDrops true
 
 function bmt_r:calibrate/calibrate_to3

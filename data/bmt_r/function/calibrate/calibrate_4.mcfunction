@@ -28,6 +28,7 @@ data modify storage bmt_r:calibration parameters.place_value set value 128
 function bmt_r:calibrate/calibrate_4_helper with storage bmt_r:calibration parameters
 
 $execute as @e[tag=sentry_display,tag=sentry$(bits)_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ air
+$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~-1 ~ air
 
 $tellraw @p {"color":"green","text":"Calibration of $(bits)-bit $(color) gates is complete."}
 
