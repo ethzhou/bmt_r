@@ -62,5 +62,7 @@ function bmt_r:util/debug/debug {command:'tellraw @p {source:"storage",storage:"
 $execute as @e[tag=sentry_display,tag=sentryA_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ bedrock
 $execute as @e[tag=sentry_display,tag=sentryB_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ bedrock
 $execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ redstone_lamp
+# Update lamps immediately
+$execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~-1 ~ air destroy
 
 function bmt_r:calibrate/calibrate_to3
