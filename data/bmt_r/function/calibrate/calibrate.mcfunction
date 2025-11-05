@@ -66,7 +66,8 @@ $execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_displa
 $execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~ ~ powered_rail
 # Update rails immediately
 gamerule doTileDrops false
+execute store result score doTileDrops bmt_r_local run gamerule doTileDrops
 $execute as @e[tag=sentry_display,tag=sentryQ_display,tag=$(color)_sentry_display,type=block_display] at @s run setblock ~ ~-1 ~ quartz_slab[type=top]
-gamerule doTileDrops true
+execute if score doTileDrops bmt_r_local matches 1 run gamerule doTileDrops true
 
 function bmt_r:calibrate/calibrate_to3
