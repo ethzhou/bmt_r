@@ -1,5 +1,5 @@
 # Replace colored blocks with correct color
-# { color:, y1:, }
+# { color:, gate_y1:, }
 
 # VIA gate_place_continue
 # AS gate_heart armor_stand
