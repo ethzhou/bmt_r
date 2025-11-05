@@ -25,6 +25,6 @@ function bmt_r:util/debug/debug {command:'tellraw @a {"color":"light_purple","sc
 
 scoreboard players remove #d bmt_r_calibration 1
 
-$execute as @e[tag=sentry_display,tag=!sentryQ_display,tag=$(color)_sentry_display,type=block_display] if score @s bmt_r_sentry_values = #current_place_value bmt_r_calibration at @s run setblock ~ ~ ~ bedrock
+$execute as @e[tag=sentry_display,tag=sentry$(bits)_display,tag=!sentryQ_display,tag=$(color)_sentry_display,type=block_display] if score @s bmt_r_sentry_values = #current_place_value bmt_r_calibration at @s run setblock ~ ~ ~ bedrock
 
 function bmt_r:calibrate/calibrate_prune with storage bmt_r:calibration parameters

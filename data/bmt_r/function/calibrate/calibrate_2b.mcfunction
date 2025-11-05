@@ -1,5 +1,5 @@
 # Calibration State 2b - Generate the next input
-# { color:, }
+# { bits:, color:, }
 
 # VIA calibrate_2a WITH storage bmt_r:calibration parameters
 
@@ -26,9 +26,9 @@ scoreboard players operation #input_vector bmt_r_calibration += #current_place_v
 
 function bmt_r:util/debug/debug {command:'tellraw @a {"color":"dark_purple","score":{"name":"#current_place_value","objective":"bmt_r_calibration"}}'}
 function bmt_r:util/debug/debug {command:'tellraw @a {"color":"dark_purple","score":{"name":"#input_vector","objective":"bmt_r_calibration"}}'}
-$function bmt_r:util/debug/debug {command:'execute unless score @e[tag=sentry_display,tag=!sentryQ_display,tag=$(color)_sentry_display,type=block_display] bmt_r_sentry_values = #current_place_value bmt_r_calibration run tellraw @a {"color":"gold","text":"warning: no display of color found"'}
+$function bmt_r:util/debug/debug {command:'execute unless score @e[tag=sentry_display,tag=sentry$(bits)_display,tag=!sentryQ_display,tag=$(color)_sentry_display,type=block_display] bmt_r_sentry_values = #current_place_value bmt_r_calibration run tellraw @a {"color":"gold","text":"warning: no display of color found"'}
 
-$execute as @e[tag=sentry_display,tag=!sentryQ_display,tag=$(color)_sentry_display,type=block_display] if score @s bmt_r_sentry_values = #current_place_value bmt_r_calibration at @s run setblock ~ ~ ~ redstone_block
+$execute as @e[tag=sentry_display,tag=sentry$(bits)_display,tag=!sentryQ_display,tag=$(color)_sentry_display,type=block_display] if score @s bmt_r_sentry_values = #current_place_value bmt_r_calibration at @s run setblock ~ ~ ~ redstone_block
 
 
 # Pad
