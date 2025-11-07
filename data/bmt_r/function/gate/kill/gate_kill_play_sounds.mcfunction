@@ -6,5 +6,5 @@
 # AT @s
 
 
-$function bmt_r:gate/gate$(bits)/sound/gate$(bits)_kill_play_diegetic_sounds
-$function bmt_r:gate/gate$(bits)/sound/gate$(bits)_kill_play_non_diegetic_sounds
+function bmt_r:gate/sound/gate_kill_play_diegetic_sounds
+function bmt_r:gate/sound/gate_kill_play_non_diegetic_sounds
