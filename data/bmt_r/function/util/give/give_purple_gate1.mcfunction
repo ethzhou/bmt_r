@@ -1,1 +1,1 @@
-give @s endermite_spawn_egg[enchantment_glint_override=true,item_name={"color":"dark_purple","italic":true,"text":"1-Bit Purple Gate"},entity_data={id:"minecraft:endermite",NoAI:1b,Tags:["gate_germ","gate1_germ","purple_gate_germ"],CustomName:"purple_gate1"}] 1
+function bmt_r:give/give_gate {bits:1,color:"purple"}

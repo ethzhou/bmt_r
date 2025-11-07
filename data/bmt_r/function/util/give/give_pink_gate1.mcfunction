@@ -1,0 +1,1 @@
+function bmt_r:give/give_gate {bits:1,color:"pink"}

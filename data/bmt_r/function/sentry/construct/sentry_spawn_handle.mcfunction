@@ -5,7 +5,7 @@
 # AS sentry_heart armor_stand
 
 
-kill @n[tag=sentry_germ,type=endermite]
+kill @n[tag=sentry_germ,type=armor_stand]
 
 $execute as @e[tag=sentry_heart,tag=sentry$(bits),tag=sentry$(terminal),tag=$(color)_sentry,type=armor_stand] at @s run function bmt_r:sentry/kill/sentry_kill
 

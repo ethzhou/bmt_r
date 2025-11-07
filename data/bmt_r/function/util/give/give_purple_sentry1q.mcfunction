@@ -1,1 +1,1 @@
-give @s endermite_spawn_egg[enchantment_glint_override=false,custom_data={"sentry":true,"bits":1,"color":"purple","terminal":"Q"},item_name={"color":"dark_purple","font":"bmt_r:raleway-regular","text":"1-Bit Output Sentry","underlined":true},entity_data={id:"minecraft:endermite",NoAI:1b,Tags:["sentry_germ","sentry1_germ","sentryQ_germ","purple_sentry_germ"],CustomName:"purple_sentry1Q"}] 1
+function bmt_r:give/give_sentry {bits:1,color:"purple",terminal:"Q"}

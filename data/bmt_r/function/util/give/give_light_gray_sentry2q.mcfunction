@@ -1,0 +1,1 @@
+function bmt_r:give/give_sentry {bits:2,color:"light_gray",terminal:"Q"}

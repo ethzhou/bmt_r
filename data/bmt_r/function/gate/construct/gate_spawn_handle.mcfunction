@@ -5,7 +5,7 @@
 # AS gate_heart armor_stand
 
 
-kill @n[tag=gate_germ]
+kill @n[tag=gate_germ,type=armor_stand]
 
 $data modify entity @s Tags set value ["gate_heart","gate$(bits)","$(color)_gate"]
 $data modify entity @s data set value {bits:$(bits),color:$(color)}

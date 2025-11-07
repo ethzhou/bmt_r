@@ -52,6 +52,120 @@ scoreboard players set #6 bmt_r_powers_of_2 64
 scoreboard players set #7 bmt_r_powers_of_2 128
 scoreboard players set #8 bmt_r_powers_of_2 256
 
+data modify storage bmt_r:item_data colors set value {\
+    black: {\
+        color: "black",\
+        hex: "8932b7",\
+        color_title_case: "Black",\
+        mob: armor_stand,\
+    },\
+    blue: {\
+        color: "blue",\
+        hex: "3c44a9",\
+        color_title_case: "Blue",\
+        mob: armor_stand,\
+    },\
+    brown: {\
+        color: "brown",\
+        hex: "825432",\
+        color_title_case: "Brown",\
+        mob: armor_stand,\
+    },\
+    cyan: {\
+        color: "cyan",\
+        hex: "169c9d",\
+        color_title_case: "Cyan",\
+        mob: armor_stand,\
+    },\
+    green: {\
+        color: "green",\
+        hex: "5d7c15",\
+        color_title_case: "Green",\
+        mob: armor_stand,\
+    },\
+    gray: {\
+        color: "gray",\
+        hex: "474f52",\
+        color_title_case: "Gray",\
+        mob: armor_stand,\
+    },\
+    light_blue: {\
+        color: "light_blue",\
+        hex: "3ab3da",\
+        color_title_case: "Light Blue",\
+        mob: armor_stand,\
+    },\
+    light_gray: {\
+        color: "light_gray",\
+        hex: "9c9d97",\
+        color_title_case: "Light Gray",\
+        mob: armor_stand,\
+    },\
+    lime: {\
+        color: "lime",\
+        hex: "80c71f",\
+        color_title_case: "Lime",\
+        mob: armor_stand,\
+    },\
+    magenta: {\
+        color: "magenta",\
+        hex: "c64fbd",\
+        color_title_case: "Magenta",\
+        mob: armor_stand,\
+    },\
+    orange: {\
+        color: "orange",\
+        hex: "f9801d",\
+        color_title_case: "Orange",\
+        mob: armor_stand,\
+    },\
+    pink: {\
+        color: "pink",\
+        hex: "f38caa",\
+        color_title_case: "Pink",\
+        mob: armor_stand,\
+    },\
+    purple: {\
+        color: "purple",\
+        hex: "8932b7",\
+        color_title_case: "Purple",\
+        mob: armor_stand,\
+    },\
+    red: {\
+        color: "red",\
+        hex: "b02e26",\
+        color_title_case: "Red",\
+        mob: armor_stand,\
+    },\
+    white: {\
+        color: "white",\
+        hex: "f9ffff",\
+        color_title_case: "White",\
+        mob: armor_stand,\
+    },\
+    yellow: {\
+        color: "yellow",\
+        hex: "ffd83d",\
+        color_title_case: "Yellow",\
+        mob: armor_stand,\
+    },\
+}
+
+data modify storage bmt_r:item_data terminals set value {\
+    A: {\
+        terminal: "A",\
+        terminal_type_title_case: "Input",\
+    },\
+    B: {\
+        terminal: "B",\
+        terminal_type_title_case: "Input",\
+    },\
+    Q: {\
+        terminal: "Q",\
+        terminal_type_title_case: "Output",\
+    },\
+}
+
 data modify storage bmt_r:gate_keepers blueprints set value {\
     input: [\
         {\
