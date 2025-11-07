@@ -1,0 +1,1 @@
+function bmt_r:calibrate/calibrate {bits:1,color:"blue"}
