@@ -15,7 +15,7 @@ execute store result score @s bmt_r_gate_facing run data get entity @s Rotation[
 
 # Check for space before placing the structure template facing south
 
-$execute store result score #non_air bmt_r_local rotated as @s run function bmt_r:gate/gate$(bits)/gate$(bits)_test_fit
+execute store result score #non_air bmt_r_local rotated as @s run function bmt_r:gate/construct/gate_test_fit with entity @s data
 execute if score #non_air bmt_r_local matches 0 run return run function bmt_r:gate/construct/gate_place_fail
 
 # Place structure template
