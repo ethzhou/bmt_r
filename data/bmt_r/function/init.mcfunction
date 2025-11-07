@@ -10,6 +10,8 @@ scoreboard players set #non_diegetic_sounds bmt_r_global 1
 
 scoreboard players set #1 bmt_r_global 1
 scoreboard players set #2 bmt_r_global 2
+scoreboard players set #6 bmt_r_global 6
+scoreboard players set #12 bmt_r_global 12
 
 scoreboard players set #calibration bmt_r_global 0
 
