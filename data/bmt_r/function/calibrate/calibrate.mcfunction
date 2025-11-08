@@ -33,7 +33,7 @@ $data modify storage bmt_r:calibration fibers.$(color)_gate$(bits) set value {\
 # Track number of input vectors checked
 scoreboard players set #k bmt_r_calibration 0
 $scoreboard players operation #n bmt_r_calibration = #$(bits) bmt_r_powers_of_2
-scoreboard players operation #n bmt_r_calibration *= #2 bmt_r_global
+scoreboard players operation #n bmt_r_calibration *= #n bmt_r_calibration
 
 function bmt_r:util/debug/debug {command:'tellraw @a {"color":"gold","score":{"name":"#n","objective":"bmt_r_calibration"}}'}
 
