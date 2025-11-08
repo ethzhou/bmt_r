@@ -22,7 +22,7 @@ $execute if entity @s[y_rotation=45..135] unless entity @s[y_rotation=135] run p
 
 # Play sounds
 
-function bmt_r:gate/kill/gate_kill_play_sounds with entity @s data
+function bmt_r:gate/sound/gate_kill_play_sounds with entity @s data
 
 # Kill armor stands
 

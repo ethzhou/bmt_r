@@ -8,7 +8,7 @@ setblock ~ ~ ~ air destroy
 
 # Play sounds
 
-function bmt_r:sentry/kill/sentry_kill_play_sounds with entity @s data
+function bmt_r:sentry/sound/sentry_kill_play_sounds with entity @s data
 
 # Kill entities
 
