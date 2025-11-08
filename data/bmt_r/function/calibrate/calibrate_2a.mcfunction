@@ -1,6 +1,6 @@
 # Calibration State 2a - Check outputs and append the input vector to each output keepers fiber list
 
-# VIA calibrate_2b
+# VIA calibrate_manage_state
 
 
 function bmt_r:util/debug/debug {command:'tellraw @a {"color":"yellow","text":"Process outputs... (2a)"}'}

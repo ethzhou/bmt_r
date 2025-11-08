@@ -1,6 +1,6 @@
 # Calibration State 3 - Delay read to allow redstone circuit propagation before recursive base case
 
-# VIA calibrate
+# VIA calibrate_manage_state
 
 
 scoreboard players remove #sleep bmt_r_calibration 1
