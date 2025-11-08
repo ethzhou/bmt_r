@@ -60,7 +60,7 @@ scoreboard players set #8 bmt_r_powers_of_2 256
 data modify storage bmt_r:item_data colors set value {\
     black: {\
         color: "black",\
-        hex: "8932b7",\
+        hex: "1d1c21",\
         color_title_case: "Black",\
         mob: armor_stand,\
     },\
