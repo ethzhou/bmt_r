@@ -1,6 +1,7 @@
 {
     "values": [
         "bmt_r:sentry/update/sentry_replace_base",
-        "bmt_r:sentry/update/sentry_rotate_display"
+        "bmt_r:sentry/update/sentry_rotate_display",
+        "bmt_r:sentry/glow/sentry_glow"
     ]
 }
