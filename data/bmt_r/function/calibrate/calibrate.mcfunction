@@ -19,7 +19,7 @@ $tellraw @p {"color":"yellow","text":"Beginning calibration of $(bits)-bit $(col
 $data modify storage bmt_r:calibration parameters set value {bits:$(bits),color:$(color)}
 $scoreboard players set #bits bmt_r_calibration $(bits)
 
-$data modify storage bmt_r:calibration fibers.$(color)_gate$(bits) set value {\
+$data modify storage bmt_r:calibration new_fibers.$(color)_gate$(bits) set value {\
     "1":[],\
     "2":[],\
     "4":[],\

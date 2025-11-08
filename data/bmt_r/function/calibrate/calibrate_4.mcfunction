@@ -6,7 +6,7 @@
 
 function bmt_r:util/debug/debug {command:'tellraw @a {"color":"yellow","text":"Update keepers... (4)"}'}
 
-# function bmt_r:calibrate/calibrate_2b with storage bmt_r:calibration parameters
+$data modify storage bmt_r:calibration fibers.$(color)_gate$(bits) set from storage bmt_r:calibration new_fibers.$(color)_gate$(bits)
 
 # Update
 
