@@ -17,4 +17,4 @@ $execute positioned ^$(local_x) ^$(local_y) ^$(local_z) unless block ~ ~ ~ minec
 
 $function bmt_r:util/debug/debug_calculation {command:'execute if block ^$(local_x) ^$(local_y) ^$(local_z) repeater[powered=true] run tellraw @a {color:"white","text":"input $(place_value) is powered"}'}
 $function bmt_r:util/debug/debug_calculation {command:'execute unless block ^$(local_x) ^$(local_y) ^$(local_z) repeater[powered=true] run tellraw @a {color:"gray","text":"input $(place_value) is powered"}'}
-$execute positioned ^$(local_x) ^$(local_y) ^$(local_z) as @n[distance=..0.1,tag=gate_keeper,tag=gate_keeper_input,type=armor_stand] if block ~ ~ ~ repeater[powered=true] run scoreboard players operation #current_gate bmt_r_gate_inputs += @s bmt_r_gate_inputs
+$execute positioned ^$(local_x) ^$(local_y) ^$(local_z) as @n[distance=..0.1,tag=gate_keeper,tag=gate_keeper_input,type=armor_stand] if block ~ ~ ~ repeater[powered=true] run scoreboard players operation #current_gate bmt_r_gate_values += @s bmt_r_gate_values
