@@ -24,6 +24,9 @@ scoreboard objectives modify bmt_r_bits displayautoupdate true
 scoreboard objectives add bmt_r_gate_values dummy
 scoreboard objectives modify bmt_r_gate_values displayautoupdate true
 
+scoreboard objectives add bmt_r_gate_previous_values dummy
+scoreboard objectives modify bmt_r_gate_previous_values displayautoupdate true
+
 scoreboard objectives add bmt_r_gate_facing dummy
 scoreboard objectives modify bmt_r_gate_facing displayautoupdate true
 
